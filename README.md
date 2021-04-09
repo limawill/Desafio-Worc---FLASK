@@ -123,6 +123,13 @@ Suas solitações foram implementadas e colocadas no disponíveis no ambiente de
   ```
   O **?numberDays=** é fixo altere somente o numero. esse endpoint pode ser usado nas 2 URL's
   
+  Exemplo:
+  
+  ```sh
+  http://127.0.0.1:5000/contacts?numberDays=10
+  http://127.0.0.1:5000/contacts/1?numberDays=4
+  ```
+  
   Qualquer duvida estou a disposição.
   
   Att.,
