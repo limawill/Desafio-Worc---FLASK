@@ -58,7 +58,8 @@ Esta URL é responde a solicitação do **Samuca** a de realizar o update dos us
 - Tipo do contato
 - Telefone
 
-A realização da atualização é realizado pela verificação do CNPJ na base. O retorno infoma quantos usuarios foram atualizados com sucesso cadastro. Para simulação os dados do usuario vem do arquivo: **dadosAlterados.json**
+A realização da atualização é realizado pela verificação do CNPJ na base. O retorno infoma quantos usuarios foram atualizados com sucesso cadastro. 
+Para simulação os dados dos usuarios vem do arquivo: **dadosAlterados.json**
 
 
 ### URL /contacts
@@ -79,7 +80,7 @@ No exemplo acima a busca será realizada da data atual há 4 dias atrás (Ex: do
 ```sh
 http://127.0.0.1:5000/contacts/1
 ```
-Esta URL é responde a uma das solicitações do **Fabricio** a de verificação da atualização dos dados dos usuarios, automaticamente ele retorna no formato **json** todos os usuarios cadastrados no dia da pesquisa.
+Esta URL é responde a outra solicitação feita pelo **Fabricio** a de verificação na atualização dos dados dos canditados (usuarios), automaticamente ele retorna no formato **json** todos os usuarios que atualizaram seus dados no dia da pesquisa.
 É possivel realizar pesquisa por periodo, basta incluir na URL um endpoint, conforme o exemplo abaixo:
 
 ```sh
@@ -89,6 +90,44 @@ No exemplo acima a busca será realizada da data atual há 4 dias atrás (Ex: do
 
 ## Respostas as solicitações
 
+Boa tarde pessoal, tudo bem?
+
+Suas solitações foram implementadas e colocadas no disponíveis no ambiente de desenvolvimento.
+
+- Samuca
+  Sua solicitação está na URL: 
+  
+  ```sh http://127.0.0.1:5000/candidates/1 ```
+  
+  Precisa somente apontar a origem do dado (URL,arquivo) atualmente o sistema está se alimentando de um arquivo JSON (dadosCadastros.json), capturando esses dados o sistema verifica no banco pelo CNPJ se esse usuario já está na base e faz o update dos dados pedidos (Nome, Sobrenome,Tipo do contato e o Telefone), o retorno informa a quantidade de usuarios foram atualizados e o CNPJ deles.
+  
+- Alfi
+  Sua solicitação está na URL: 
+  
+  ```sh http://127.0.0.1:5000/candidates ```
+  
+  Assim como a solicitação do Samuca precisamos de uma origem para os dados (URL,arquivo) sua solitação também está vindo de um arquivo JSON (dadosAlterados.json) o sistema só aceita CNPJ que não foram cadastrados ainda.
+  O retorno informa a quantidade de usuarios foram inseridos na nossa base de dados e também inclui os que não foram inseridos (por já ter o CNPJ na base).
+  
+ 
+- Fabricio
+  Cara a suas solitações estão nas seguintes URL's:
+  ```sh
+    http://127.0.0.1:5000/contacts
+    http://127.0.0.1:5000/contacts/1
+  ```
+  Sendo que a primeira (contacts) faz a verificação dos novos usuarios na base e a outra (contacts/1) faz a verificação de quem atualizou seus dados. Para auxiliar fiz um endpoint para realizar a pesquisa por periodos da data atual para trás.
+  Para utilizar é necessário inserir 
+  ```sh
+  ?numberDays=4
+  ```
+  O **?numberDays=** é fixo altere somente o numero. esse endpoint pode ser usado nas 2 URL's
+  
+  Qualquer duvida estou a disposição.
+  
+  Att.,
+  
+  William Lima
 
 
 
