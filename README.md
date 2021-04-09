@@ -5,9 +5,9 @@ Este projeto é executado no micro framework Python: Flask.
 
 ## Dependencias
 
-Flask==1.1.2
-dynaconf==3.1.4
-DateTime==4.3
+- Flask==1.1.2
+- dynaconf==3.1.4
+- DateTime==4.3
 
 ## Como rodar localmente
 O Software foi desenvolvido no linux  Fedora 32, o app será executado dentro e um container Docker 
