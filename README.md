@@ -1,7 +1,7 @@
 # Desafio_Worc_FLASK
 ## Desafio Startup WORC
 
-Este projeto é executado no micro framework Python: Flask.
+Este projeto é executado no micro framework Python: Flask e banco de dados SQLite
 
 ## Dependencias
 
@@ -9,8 +9,19 @@ Este projeto é executado no micro framework Python: Flask.
 - dynaconf==3.1.4
 - DateTime==4.3
 
+
 ## Como rodar localmente
-O Software foi desenvolvido no linux  Fedora 32, o app será executado dentro e um container Docker 
+O Software foi desenvolvido no linux  Fedora 32 com a instalação do banco SQLite no caso do Fedora Linux a instalação do banco é feito pelo comando:
+```sh
+$ sudo dnf install sqlite sqlitebrowser
+```
+Para verificar se o banco foi instalado corretamente, no terminal faça:
+```sh
+sqlite3 --version
+```
+Já o app será executado dentro e um container Docker para instalação do mesmo há estes tutoriais:<p>
+https://docs.docker.com/docker-for-windows/install/ </p>
+<p>https://fedoramagazine.org/docker-and-fedora-32/https://fedoramagazine.org/docker-and-fedora-32/</p>
 
 ### Docker
 
