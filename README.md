@@ -1,5 +1,4 @@
-# Desafio_Worc_FLASK
-## Desafio Startup WORC
+# Desafio Startup WORC
 
 Este projeto é executado no micro framework Python: Flask e banco de dados SQLite
 
