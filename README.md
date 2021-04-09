@@ -145,8 +145,8 @@ Suas solitações foram implementadas e colocadas no disponíveis no ambiente de
 ├── Dockerfile
 ├── Project
 |     |── app.py
-|     └── views.py
-├── settings.toml
+|     ├── views.py
+|     └── settings.toml
 ├── requirements.txt
 └── db.py
 
