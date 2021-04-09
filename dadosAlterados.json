@@ -1,0 +1,68 @@
+[
+{
+    "name": "Fabricio Silva",
+    "sobrenome": "Pereira",
+    "document": "28.718.220/0001-74",
+    "type_document": "CNPJ",
+    "job": "PO",
+    "contacts": {
+      "type": "Comercial",
+      "number": "5521996112618"
+    }
+  },
+  {
+    "name": "Antonio",
+    "sobrenome": "Joaquim de Ferreira",
+    "document": "61.394.462/0001-25",
+    "type_document": "CNPJ",
+    "job": "PO",
+    "contacts": {
+      "type": "Residencial",
+      "number": "5518996112618"
+    }
+  },
+  {
+    "name": "Marcela",
+    "sobrenome": "da Silva",
+    "document": "10.821.496/0001-18",
+    "type_document": "CNPJ",
+    "job": "PO",
+    "contacts": {
+      "type": "Comercial",
+      "number": "5517996112618"
+    }
+  },
+  {
+    "name": "Ana",
+    "sobrenome": "Yamamoto",
+    "document": "67.326.314/0001-50",
+    "type_document": "CNPJ",
+    "job": "PO",
+    "contacts": {
+      "type": "Comercial",
+      "number": "5512996112618"
+    }
+  },
+  {
+    "name": "Iris",
+    "sobrenome": " Valencia Pereira",
+    "document": "37.991.862/0001-33",
+    "type_document": "CNPJ",
+    "job": "PO",
+    "contacts": {
+      "type": "Comercial",
+      "number": "5511996112618"
+    }
+  },
+  {
+    "name": "Rafael",
+    "sobrenome": "da Silva",
+    "document": "34.414.524/0001-40",
+    "type_document": "CNPJ",
+    "job": "PO",
+    "contacts": {
+      "type": "Comercial",
+      "number": "5511996112618"
+    }
+  }   
+]

@@ -1,0 +1,12 @@
+[default]
+sqlUpdate = "UPDATE usuario SET Nome = ?, sobrenome = ?, contatoTipo = ?, contatoNumero = ?, dataAtualizacao = ? WHERE CNPJ = ?"
+sqlInsert = "INSERT INTO usuario (CNPJ,Nome,sobrenome,tipoDocumento,job,contatoTipo,contatoNumero,dataCadastro,dataAtualizacao) VALUES (?,?,?,?,?,?,?,?,?)"
+sqlSelect = "SELECT Nome,sobrenome,contatoTipo, contatoNumero FROM usuario WHERE CNPJ = ?"
+sqlCadastros = "SELECT * FROM usuario where dataCadastro >= date(?) AND dataCadastro <  date(?, '+1 day')"
+sqlCadPeriodo ="SELECT * FROM usuario where dataCadastro BETWEEN (?) AND date(?, '+1 day')"
+sqlAtualizacao = "SELECT * FROM usuario where dataAtualizacao >= date(?) AND dataAtualizacao <  date(?, '+1 day')"
+sqlAtuPeriodo ="SELECT * FROM usuario where dataAtualizacao BETWEEN (?) AND date(?, '+1 day')"
+arquivoNovos = "dadosCadastros.json"
+arquivosAlterados = "dadosAlterados.json"
+
+
