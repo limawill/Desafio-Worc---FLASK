@@ -68,16 +68,16 @@ def configure(app):
             data_cad = str(datetime.today())
             data_atual = None
 
-            dados_cliente = (cnpj, nome_cliente, sobre_cliente,
-                             tipo_doc, job, cont_tipo, tel,
-                             data_cad, data_atual)
             try:
-                cursor.executemany(settings.sqlInsert, dados_cliente)
+                cursor.execute(settings.sqlInsert, (cnpj, nome_cliente,
+                                                    sobre_cliente, tipo_doc,
+                                                    job, cont_tipo, tel,
+                                                    data_cad, data_atual))
                 connection.commit()
-                listaExistentes.append(cnpj)
+                listaNovos.append(cnpj)
             except:
                 connection.rollback()
-                listaNovos.append(cnpj)
+                listaExistentes.append(cnpj)
         # Fechando conexão
         connection.close()
         # Retorno dos dados
@@ -107,12 +107,10 @@ def configure(app):
             cont_tipo = i["contacts"]["type"]
             tel = i["contacts"]["number"]
             data_atual = str(datetime.today())
-            
-            dados_cliente = (cnpj, nome_cliente, sobre_cliente,
-                             cont_tipo, tel, data_atual)
 
             try:
-                cursor.executemany(settings.sqlInsert, dados_cliente)
+                cursor.execute(settings.sqlUpdate, (nome_cliente,
+                               sobre_cliente, cont_tipo, tel, data_atual, cnpj))
                 connection.commit()
                 listaExistentes.append(cnpj)
             except:
