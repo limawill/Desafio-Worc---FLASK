@@ -1,9 +1,10 @@
-from flask import Flask, request
-from dynaconf import settings             
-from flask import jsonify
+""" Inicio do APP importando FLASK"""
+from flask import Flask, redirect
 import views
 
+
 def create_app():
+    """Classe Inicial """
     app = Flask(__name__)
     views.configure(app)
     return app
