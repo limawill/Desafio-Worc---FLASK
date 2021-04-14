@@ -2,7 +2,7 @@
 import sqlite3
 import json
 from datetime import datetime, timedelta
-from flask import request, jsonify, redirect
+from flask import request, jsonify
 from dynaconf import settings
 
 
